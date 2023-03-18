@@ -1,10 +1,13 @@
 import { Profile } from "./profile/Profile";
-import user from '../user.json'
+import { Statistics } from "./Statistics/Statistics";
+import user from '../json data/user.json'
+import data from '../json data/data.json'
+import friends from '../json data/friends.json'
 import './App.css'
 
 export const App = () => {
 	return (
-	  <section className="contaiter">
+	  <div className="contaiter">
 	  <div className="card-wrapper">
 		  <Profile
 			username={user.username}
@@ -12,7 +15,11 @@ export const App = () => {
 			location={user.location}
 			avatar={user.avatar}
 			stats={user.stats}/>
-	 </div>
-	 </section>
+			</div>
+			<div className="statistics-wrapper">
+				<Statistics title="Upload stats" stats={data} />
+{/* <Statistics stats={data} /> */}
+		</div>
+		</div>
   );
 };
