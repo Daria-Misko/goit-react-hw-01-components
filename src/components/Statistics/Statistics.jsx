@@ -1,5 +1,5 @@
 import { StatList, StatisticsSection, Title, StatItem, StatLabel, StatPerc } from "./Statistics.styled"
-import PropTypes, { number } from "prop-types";
+import PropTypes from "prop-types";
 
 export function Statistics({ title, stats }) {
 	return (

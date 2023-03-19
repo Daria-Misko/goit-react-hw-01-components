@@ -1,4 +1,4 @@
-import PropTypes, { number } from "prop-types";
+import PropTypes from "prop-types";
 import { FriendItem, FriendAvatar, UserName } from "./FriendListItem.styled";
 
 export function FriendListItem({ friend }) {

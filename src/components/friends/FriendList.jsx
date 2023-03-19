@@ -1,6 +1,6 @@
 import { FriendListItem } from "./FriendCard/FriendListItem";
 import {FriendsList} from "./FriendList.styled"
-import PropTypes, { number } from "prop-types";
+import PropTypes from "prop-types";
 
 export function FriendList({ friends }) {
 	return (
