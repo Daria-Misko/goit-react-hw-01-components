@@ -6,6 +6,7 @@ const FriendsList = styled.ul`
 	margin-right: auto;
 	padding: 0;
 	width: 300px;
+	margin-bottom: 20px;
 `;
 
 export { FriendsList }
