@@ -6,6 +6,7 @@ const StatList = styled.ul`
 	height: 50px;
 	padding: 0;
 	margin: 0;
+	margin-bottom: 20px;
 `;
 
 const StatisticsSection = styled.section`

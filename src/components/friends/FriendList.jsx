@@ -1,13 +1,14 @@
 import { FriendListItem } from "./FriendCard/FriendListItem";
+import {FriendsList} from "./FriendList.styled"
 import PropTypes, { number } from "prop-types";
 
 export function FriendList({ friends }) {
 	return (
-		<ul>
+		<FriendsList>
 			{friends.map(friend => (
 				<FriendListItem key={friend.id} friend={friend}/>
 			))}
-		</ul>
+		</FriendsList>
 	)
 }
 
