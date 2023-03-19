@@ -12,10 +12,9 @@ export function FriendListItem({ friend }) {
 }
 	
 FriendListItem.propTypes = {
-	friend: PropTypes.arrayOf({
+	friend: PropTypes.shape({
 		avatar: PropTypes.string.isRequired,
 		name: PropTypes.string.isRequired,
 		isOnline: PropTypes.bool.isRequired,
-		id: PropTypes.number.isRequired,
 	})
 }
