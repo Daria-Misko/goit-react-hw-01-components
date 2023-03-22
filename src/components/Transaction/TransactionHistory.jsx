@@ -1,8 +1,8 @@
-import PropTypes from "prop-types";
-import { Table, Head, Body, Element } from "./TransactionHistory.styled"
+import PropTypes from 'prop-types';
+import { Table, Head, Body, Element } from './TransactionHistory.styled';
 export function TransactionHistory({ items }) {
-	return (
-		<Table>
+  return (
+    <Table>
       <Head>
         <tr>
           <th>Type</th>
@@ -23,13 +23,15 @@ export function TransactionHistory({ items }) {
         })}
       </Body>
     </Table>
-)
+  );
 }
 TransactionHistory.prototype = {
-	items: PropTypes.arrayOf(PropTypes.shape({
-		id: PropTypes.string.isRequired,
-		type: PropTypes.string.isRequired,
-		amount: PropTypes.string.isRequired,
-		currency: PropTypes.string.isRequired
-	}))
-}
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
